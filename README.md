@@ -8,6 +8,9 @@
   - <a href="/snippets/react.code-snippets">
       <b>ReactJS (Javascript & Typescript)</b>
     </a>
+  - <a href="/snippets/react-strict.code-snippets">
+      <b>ReactJS Strict (Javascript & Typescript)</b>
+    </a>
 </details>
 
 - - -

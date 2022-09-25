@@ -1,0 +1,184 @@
+{
+	"[TS] Arrow Function Component with Props": {
+		"prefix": "!afc",
+		"body": [
+			"type Props = {};",
+			"",
+			"const ${TM_FILENAME_BASE} = (props: Props) => {",
+			"  return (",
+			"    $0",
+			"  );",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "Creates an exported Typescript React Arrow Function Component with Props",
+		"scope": "typescriptreact, typescript"
+	},
+	"[TS] Arrow Function Component with Props & Children": {
+		"prefix": "!afcc",
+		"body": [
+			"import { PropsWithChildren } from \"react\";",
+			"",
+			"type Props = PropsWithChildren<{}>;",
+			"",
+			"const ${TM_FILENAME_BASE} = (props: Props) => {",
+			"  return (",
+			"    $0",
+			"  );",
+			"};",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "Creates an exported Typescript React Arrow Function Component with Props including children",
+		"scope": "typescriptreact, typescript"
+	},
+	"[JS] Arrow Function Component": {
+		"prefix": "!afc",
+		"body": [
+			"const ${TM_FILENAME_BASE} = (props) => {",
+			"  return (",
+			"    $0",
+			"  );",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "Creates an exported React Arrow Function Component",
+		"scope": "javascriptreact, javascript"
+	},
+	"[TS] Function Component with Props": {
+		"prefix": "!fc",
+		"body": [
+			"type Props = {};",
+			"",
+			"function ${TM_FILENAME_BASE}(props: Props) {",
+			"  return (",
+			"    $0",
+			"  );",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "Creates an exported Typescript React Function Component with Props",
+		"scope": "typescriptreact, typescript"
+	},
+	"[TS] Function Component with Props & Children": {
+		"prefix": "!fcc",
+		"body": [
+			"import { PropsWithChildren } from \"react\";",
+			"",
+			"type Props = PropsWithChildren<{}>;",
+			"",
+			"function ${TM_FILENAME_BASE}(props: Props) {",
+			"  return (",
+			"    $0",
+			"  );",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "Creates an exported Typescript React Function Component with Props including children",
+		"scope": "typescriptreact, typescript"
+	},
+	"[JS] Function Component": {
+		"prefix": "!fc",
+		"body": [
+			"function ${TM_FILENAME_BASE}(props) {",
+			"  return (",
+			"    $0",
+			"  );",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "Creates an exported React Function Component",
+		"scope": "javascriptreact, javascript"
+	},
+	"[TS] Context / Provider Template": {
+		"prefix": "!ctx",
+		"body": [
+			"import { createContext, PropsWithChildren } from \"react\";",
+			"",
+			"type ProviderProps = PropsWithChildren<{}>;",
+			"",
+			"const ${TM_FILENAME_BASE} = createContext(${0:null});",
+			"",
+			"export const ${TM_FILENAME_BASE/context$//i}Provider = ({ children }: ProviderProps) => {",
+			"  return (",
+			"    <${TM_FILENAME_BASE}.Provider value={}>",
+			"      {children}",
+			"    </${TM_FILENAME_BASE}.Provider>",
+			"  );",
+			"};",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "Creates a Typescript React Context Provider Template",
+		"scope": "typescriptreact, typescript"
+	},
+	"[JS] Context / Provider Template": {
+		"prefix": "!ctx",
+		"body": [
+			"import { createContext } from \"react\";",
+			"",
+			"const ${TM_FILENAME_BASE} = createContext(${0:null});",
+			"",
+			"export const ${TM_FILENAME_BASE/context$//i}Provider = ({ children }) => {",
+			"  return (",
+			"    <${TM_FILENAME_BASE}.Provider value={}>",
+			"      {children}",
+			"    </${TM_FILENAME_BASE}.Provider>",
+			"  );",
+			"};",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "Creates a React Context Provider Template",
+		"scope": "javascriptreact, javascript"
+	},
+	"[JS, TS] useEffect": {
+		"prefix": "!ue",
+		"body": ["useEffect(() => {$0}, []);"],
+		"description": "Creates a React UseEffect Template",
+		"scope": "typescriptreact, javascriptreact, typescript, javascript"
+	},
+	"[JS, TS] useState": {
+		"prefix": "!us",
+		"body": ["const [$1, $2] = useState(${0:null});"],
+		"description": "Creates a React UseState Template",
+		"scope": "typescriptreact, javascriptreact, typescript, javascript"
+	},
+	"[JS, TS] useMemo": {
+		"prefix": "!um",
+		"body": ["const $1 = useMemo(() => {$0}, []);"],
+		"description": "Creates a React UseMemo Template",
+		"scope": "typescriptreact, javascriptreact, typescript, javascript"
+	},
+	"[JS, TS] useCallback": {
+		"prefix": "!uc",
+		"body": ["const $1 = useCallback(() => {$0}, []);"],
+		"description": "Creates a React UseCallback Template",
+		"scope": "typescriptreact, javascriptreact, typescript, javascript"
+	},
+	"[TS] useRef": {
+		"prefix": "!ur",
+		"body": ["const $1 = useRef<$0>(null);"],
+		"description": "Creates a React UseRef Template",
+		"scope": "typescriptreact, typescript"
+	},
+	"[JS] useRef": {
+		"prefix": "!ur",
+		"body": ["const $1 = useRef(null);"],
+		"description": "Creates a React UseRef Template",
+		"scope": "javascriptreact, javascript"
+	}
+}
